@@ -1,7 +1,6 @@
 # drafts-post-to-cosmic
-A simple action extension to post your Draft to Cosmic as a blog entry
 
-A Drafts action extension written in Javascipt to publish directly from a Draft to a Cosmic bucket of your choice. 
+A [Drafts action extension](https://actions.getdrafts.com/a/1fP) written in Javascipt to publish directly from a Draft to a Cosmic bucket of your choice. 
 
 This action preserves the body markdown as HTML so it’s accepted in to Cosmic’s content block as expected. No markup necessary. By default it posts as a “draft”, but I’d recommend changing the `status` line to “published” once you’re comfortable with how it works as it saves a step later.
 
