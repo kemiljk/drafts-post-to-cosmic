@@ -67,7 +67,7 @@ let snippet = draft.bodyPreview(140);
 
 var http = HTTP.create(); // create HTTP object
 var response = http.request({
-  "url": "https://api.cosmicjs.com/v1/your_cosmic_slug/add-object", // Add your Cosmic slug, you can find it in your user settings
+  "url": "https://api.cosmicjs.com/v1/your_cosmic_bucket_slug/add-object", // Add your Cosmic Bucket slug, you can find it in your user settings
   "method": "POST",
   "data": {
   "title": title, // default Cosmic data point for the object title
