@@ -1,6 +1,6 @@
 # Drafts››Cosmic
 
-![Drafts to Cosmic logo](https://res.cloudinary.com/kejk/image/upload/v1607676836/drafts-to-cosmic_ojoouq.svg)
+![Drafts to Cosmic logo](https://res.cloudinary.com/kejk/image/upload/v1607677073/drafts-to-cosmic_hllch7.svg)
 
 A [Drafts action extension](https://actions.getdrafts.com/a/1fP) written in Javascipt to publish directly from a Draft to a Cosmic bucket of your choice. 
 
