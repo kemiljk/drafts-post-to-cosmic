@@ -11,7 +11,7 @@ The extension is well commented so it's clear what elements you should change an
 1. Define your Drafts variables (you can see all the available options from their extensive [script reference library](https://scripting.getdrafts.com)
 
 ```javascript
-let title = draft.processTemplate("[[title]]");
+let title = draft.displayTitle;
 let content = draft.processTemplate("%%[[body]]%%");
 let date = draft.processTemplate("[[modified]]");
 let snippet = draft.bodyPreview(140);
@@ -60,7 +60,7 @@ var response = http.request({
 5. Putting it all together
 
 ```javascript
-let title = draft.processTemplate("[[title]]");
+let title = draft.displayTitle;
 let content = draft.processTemplate("%%[[body]]%%");
 let date = draft.processTemplate("[[modified]]");
 let snippet = draft.bodyPreview(140);
