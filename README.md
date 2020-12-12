@@ -10,7 +10,7 @@ The extension is well commented so it's clear what elements you should change an
 
 1. Define your Drafts variables (you can see all the available options from their extensive [script reference library](https://scripting.getdrafts.com)
 
-```
+```javascript
 let title = draft.processTemplate("[[title]]");
 let content = draft.processTemplate("%%[[body]]%%");
 let date = draft.processTemplate("[[modified]]");
@@ -19,7 +19,7 @@ let snippet = draft.bodyPreview(140);
 
 2. Create your API POST request
 
-```
+```javascript
 var http = HTTP.create(); // create HTTP object
 var response = http.request({
   "url": "https://api.cosmicjs.com/v1/your_cosmic_slug/add-object", // Add your Cosmic slug, you can find it in your user settings
@@ -28,7 +28,7 @@ var response = http.request({
 
 3. Then add your data (this should match your previously set variables and should align with what your Cosmic bucket is expecting for consistency. But! Cosmic is clever so if a metafield doesn't exist, Cosmic will create it for you for that object and fill out the value!
 
-```
+```javascript
   "data": {
   "title": title, // default Cosmic data point for the object title
   "content": content, // default Cosmic data point for the body content
@@ -50,7 +50,7 @@ var response = http.request({
 ```
 4. Finally, set a status type (either draft or published. If you don't set anything here or delete this line then Cosmic will publish it by default. Then set your Cosmic write key to allow you to publish content from outside your Bucket. Get this from Bucket › Settings › Write Key 
 
-```
+```javascript
   "status": "draft", // e.g. "draft" / "published"
   "write_key": "your_cosmic_write_key"
 	},
@@ -59,7 +59,7 @@ var response = http.request({
 
 5. Putting it all together
 
-```
+```javascript
 let title = draft.processTemplate("[[title]]");
 let content = draft.processTemplate("%%[[body]]%%");
 let date = draft.processTemplate("[[modified]]");
